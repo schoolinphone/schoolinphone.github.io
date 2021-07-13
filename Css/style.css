@@ -1,0 +1,229 @@
+* {
+  top: 0;
+  text-decoration: none;
+  list-style-type: none;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none; 
+}
+
+body {
+  background-color: var(--bg-color);
+  margin: auto;
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-page{
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: sticky;
+  z-index: 1;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logo {
+  position: relative;
+  top: 15px;
+}
+/* Rest of the logo css, check animation.css */
+
+.right-nav h1 {
+  margin: 20px 0px;
+  font-weight: bold;
+  width: max-content;
+  font-size: 50px;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  cursor: pointer;
+  background-image: url('../OIP (2).jpg');
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menus {
+  display: flex;
+}
+
+.menus ul {
+  display: flex;
+}
+.menus ul li:hover {
+  transform: scale(1.15);
+  transition-duration: 0.3s;
+  color: var(--primary-color);
+}
+
+.menus ul li {
+  cursor: pointer;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0px 20px;
+  color: black;
+}
+
+.home-contents {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100vw;
+  overflow: hidden;
+  align-items: flex-start;
+}
+.intro {
+  position: relative;
+  left: 120px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+.intro h1 {
+  margin: 15px 0px;
+  font-family: var(--primary-font);
+  font-size: 50px;
+}
+
+.intro span {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 600;
+}
+.home-Get-Started-btn{
+  width: 200px;
+  height: 4vw;
+  border-radius: 5px;
+  background-color: var(--btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 80px;
+  top: 20vw;
+}
+#get-started{
+  font-size: 26px;
+  color: var(--bg-color);
+}
+
+.home-Get-Started-btn:hover #get-started{
+  color: var(--btn-color);
+}
+.home-Get-Started-btn:hover{
+  background-color: var(--bg-color);
+  color: var(--btn-color);
+  border: solid 2px var(--btn-color);
+  cursor: pointer;
+}
+
+
+.home-page-image{
+  width: 45vw;
+  height: 45vw;
+}
+
+.services, .pricings, .about, .contact{
+  position: absolute;
+  z-index: 2;
+  right: -100vw;
+  width: 92vw;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition-duration: 1s;
+  display: block;
+}
+.servicesLeft, .pricingsLeft, .aboutLeft, .contactLeft{
+  position: absolute;
+  z-index: 2;
+  left: -8vw;
+  width: 8vw;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition-duration: 1s;
+  display: block;
+}
+
+.container1{
+  background-color: var(--btn-color);
+  width: 8vw;
+  height: 100vh;
+  position: relative;
+}
+.compony-name{
+  transform-origin: 0vw 0vw;
+  transform: rotate(-90deg) translate(-500px, +20px); 
+  position: absolute;
+  font-size: 50px;
+  width: 40vw;
+  border: 1px solid rgba(255, 0, 0, 0);
+  font-family: var(--primary-font);
+  background-image: url('../Greengif.gif');
+  background-repeat: repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container2{
+  width: 92vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.945);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+.container2-1{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.close2, .close3, .close4, .close5{
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/cross.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.close2:hover, .close3:hover, .close4:hover, .close5:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+.container2-2{
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-image: url('../Images/menuBG.png');
+  background-size: cover;
+}
+
+
