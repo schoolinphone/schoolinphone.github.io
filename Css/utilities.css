@@ -7,8 +7,8 @@
   --font3: Verdana, Geneva, Tahoma, sans-serif;
   --gfont: "Google Sans";
   --primary-color: #008c86;
-  --btn-color: #045049;
-  --bg-color: #ffffff;
+  --btn-color: #00635e;
+  --bg-color: linear-gradient(0deg, #67bdb47a, transparent);;
 }
 
 .btn input {
