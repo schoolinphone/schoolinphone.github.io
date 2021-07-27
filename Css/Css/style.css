@@ -30,6 +30,7 @@ body {
   justify-content: space-around;
   position: sticky;
   z-index: 1;
+  height: 100px;
 }
 
 .right-nav {
@@ -89,20 +90,23 @@ body {
   width: 100vw;
   overflow: hidden;
   align-items: flex-start;
+  height: calc(100vh - 100px);
 }
+
 .intro {
   position: relative;
-  left: 120px;
+  right: 20px;
   top: 75px;
   display: flex;
   flex-direction: column;
   width: 40vw;
   height: 30vw;
 }
+
 .intro h1 {
   margin: 15px 0px;
   font-family: var(--primary-font);
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .intro span {
@@ -120,7 +124,7 @@ body {
   align-items: center;
   position: absolute;
   right: 80px;
-  top: calc(25vw - 100px);
+  top: calc(30vw - 100px);
 }
 #get-started {
   font-size: 22px;
@@ -139,8 +143,8 @@ body {
 }
 
 .home-page-image {
-  width: 45vw;
-  height: 45vw;
+  width: 400px;
+  height: 400px;
 }
 
 .services,
