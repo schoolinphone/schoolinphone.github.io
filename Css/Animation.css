@@ -1,0 +1,288 @@
+/* Logo-Animations */
+  .logo svg {
+    cursor: pointer;
+    position: relative;
+    height: 120px;
+    width: 120px;
+  }
+  
+  .svglogo {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    cursor: pointer;
+    top: 14px;
+    animation-name: logo;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    border: 0px solid red;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+  }
+  
+  @keyframes logo {
+    0% {
+      top: -20px;
+    }
+  
+    50% {
+      top: 0px;
+    }
+  
+    100% {
+      top: -20px;
+    }
+  }
+  
+  #ajYbqCazo {
+    position: relative;
+    top: 0px;
+    animation-name: Leye;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+  }
+  
+  @keyframes Leye {
+    0% {
+      transform: translate(-2px, 4px);
+    }
+  
+    12% {
+      transform: translate(-3px, 6px);
+    }
+  
+    24% {
+      transform: translate(-2px, 4px);
+    }
+  
+    36% {
+      transform: translate(0px, 0px);
+    }
+  
+    48% {
+      transform: translate(2px, -4px);
+    }
+  
+    60% {
+      transform: translate(3px, -6px);
+    }
+  
+    91% {
+      transform: translate(2px, -4px);
+    }
+  
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  #f3T6pRcvoS {
+    position: relative;
+    top: 0px;
+    animation-name: Leyeball;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+  }
+  
+  @keyframes Leyeball {
+    0% {
+      transform: translate(-2px, 4px);
+    }
+  
+    12% {
+      transform: translate(-3px, 6px);
+    }
+  
+    24% {
+      transform: translate(-2px, 4px);
+    }
+  
+    36% {
+      transform: translate(0px, 0px);
+    }
+  
+    48% {
+      transform: translate(2px, -4px);
+    }
+  
+    60% {
+      transform: translate(3px, -6px);
+    }
+  
+    91% {
+      transform: translate(2px, -4px);
+    }
+  
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  #b8dyowH5sc {
+    position: relative;
+    top: 0px;
+    animation-name: Reye;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+  }
+  
+  @keyframes Reye {
+    0% {
+      transform: translate(-2px, 4px);
+    }
+  
+    12% {
+      transform: translate(-3px, 6px);
+    }
+  
+    24% {
+      transform: translate(-2px, 4px);
+    }
+  
+    36% {
+      transform: translate(0px, 0px);
+    }
+  
+    48% {
+      transform: translate(2px, -4px);
+    }
+  
+    60% {
+      transform: translate(3px, -6px);
+    }
+  
+    91% {
+      transform: translate(2px, -4px);
+    }
+  
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
+  #baZKQe2fc {
+    position: relative;
+    top: 0px;
+    animation-name: Reyeball;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+  }
+  
+  @keyframes Reyeball {
+    0% {
+      transform: translate(-2px, 4px);
+    }
+  
+    12% {
+      transform: translate(-3px, 6px);
+    }
+  
+    24% {
+      transform: translate(-2px, 4px);
+    }
+  
+    36% {
+      transform: translate(0px, 0px);
+    }
+  
+    48% {
+      transform: translate(2px, -4px);
+    }
+  
+    60% {
+      transform: translate(3px, -6px);
+    }
+  
+    91% {
+      transform: translate(2px, -4px);
+    }
+  
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+
+/* Home-Page Image Animations*/
+
+  #baloon, #baloon-boundary{
+    position: relative;
+    top: 0px;
+    animation-name: baloon-up;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+  }
+  @keyframes baloon-up {
+    0% {
+      transform: translate( -0px, -12px);
+    }
+    /* 5% {
+      transform: translate( 0px, -24px);
+    }
+    10% {
+      transform: translate( -0px, -36px);
+    }
+    15% {
+      transform: translate( 0px, -48px);
+    }
+    20% {
+      transform: translate( -0px, -60px);
+    }
+    25% {
+      transform: translate( 0px, -72px);
+    }
+    30% {
+      transform: translate( -0px, -84px);
+    }
+    35% {
+      transform: translate( 0px, -96px);
+    }
+    40% {
+      transform: translate( -0px, -108px);
+    }
+    45% {
+      transform: translate( 0px, -120px);
+    }*/
+    50% {
+      transform: translate( 50px, -140px);
+    }
+    /*55% {
+      transform: translate( 0px, -144px);
+    }
+    60% {
+      transform: translate( -0px, -156px);
+    }
+    65% {
+      transform: translate( 0px, -168px);
+    }
+    70% {
+      transform: translate( -0px, -180px);
+    }
+    75% {
+      transform: translate( 0px, -192px);
+    }
+    80% {
+      transform: translate( -0px, -204px);
+    }
+    85% {
+      transform: translate( 0px, -216px);
+    }
+    90% {
+      transform: translate( -0px, -240px);
+    }
+    95% {
+      transform: translate( 0px, -280px);
+    } */
+    100% {
+      transform: translate( -120px, -350px);
+    }
+  }
