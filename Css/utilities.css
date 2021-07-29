@@ -7,8 +7,20 @@
   --font3: Verdana, Geneva, Tahoma, sans-serif;
   --gfont: "Google Sans";
   --primary-color: #008c86;
+  --secondary-color: #2BA589;
+  --tertiary-color: #58BD86;
+  --quaternary-color: #BEE776;
+  --quinary-color: #F9F871;
   --btn-color: #00635e;
-  --bg-color: linear-gradient(0deg, #67bdb47a, transparent);;
+  --bg-color: linear-gradient(0deg, #67bdb47a, transparent);
+  --spot-palette-1:#008c86;
+  --spot-palette-2:#56C2BB;
+  --spot-palette-3:#C0FCF7;
+  --spot-palette-4:#FF70C4;
+  --shades-1:#00716C;
+  --shades-2:#005752;
+  --shades-3:#003E3A;
+  --shades-4:#002724;
 }
 
 .btn input {

@@ -84,19 +84,18 @@ body {
 }
 
 .home-contents {
+  margin: auto;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   width: 100vw;
   overflow: hidden;
-  align-items: flex-start;
   height: calc(100vh - 100px);
 }
 
 .intro {
   position: relative;
-  right: 20px;
-  top: 75px;
   display: flex;
   flex-direction: column;
   width: 40vw;
@@ -123,8 +122,8 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 80px;
-  top: calc(30vw - 100px);
+  right: 124px;
+  top: calc(30vw - 100px); /* 30vw is kept as .intro height is 30 vw don't change it*/
 }
 #get-started {
   font-size: 22px;
@@ -143,8 +142,9 @@ body {
 }
 
 .home-page-image {
-  width: 400px;
-  height: 400px;
+  width: 400px;  /* it is on the basics of Standerd resolution monitor, you are using higher resolution monitor don't Change it*/
+  height: 400px;  /* it is on the basics of Standerd resolution monitor, you are using higher resolution monitor don't Change it*/
+  
 }
 
 .services,
