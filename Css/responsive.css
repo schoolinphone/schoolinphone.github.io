@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1280px){
+  .home-page{
+    background-position: bottom -190px right 0px;
+  }
+  .home-Get-Started-btn{
+    top: calc( 35vw - 100px);
+  }
+}
+@media only screen and (max-width: 1200px){
+  .home-page{
+    background-position: bottom -150px right 0px;
+  }
+  .home-Get-Started-btn{
+    top: calc( 35vw - 90px);
+  }
+  .home-page-image{
+    width: 500px;
+    height: 450px;
+  }
+  .intro{
+    left: 0px;
+  }
+}
+@media only screen and (max-width: 1030px){
+  .intro{
+    width:50vw;
+    height: 55vh;
+  }
+  .home-Get-Started-btn{
+    top: calc( 35vw - 90px);
+  }
+  .home-page-image{
+    width: 450px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

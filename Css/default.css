@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  text-decoration: none;
+  list-style-type: none;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body {
+  margin: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.home-page {
+  background: url(../Images/bg.svg) no-repeat;
+  background-size: cover;
+  background-position: bottom -200px right 0px;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  background-size: cover;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  z-index: 1;
+  height: 100px;
+}
+
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.logo {
+  position: relative;
+  top: 15px;
+}
+/* Rest of the logo css, check animation.css */
+
+.right-nav h1 {
+  margin: 20px 0px;
+  font-weight: bold;
+  width: max-content;
+  font-size: 2.8rem;
+  font-family: var(--primary-font);
+  cursor: pointer;
+  text-shadow: 1px 1px 0px #008c86, 1px 1px 0px #05636d;
+  -webkit-text-fill-color: transparent;
+}
+
+.menus {
+  display: flex;
+}
+
+.menus ul {
+  display: flex;
+}
+.menus ul li:hover {
+  transform: scale(1.15);
+  transition-duration: 0.3s;
+  color: var(--secondary-color);
+}
+
+.menus ul li {
+  cursor: pointer;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0px 20px;
+  color: var(--primary-color);
+}
+
+.home-contents {
+  margin:auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  overflow: hidden;
+  height: calc(100vh - 100px);
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 35vw;
+  left: 35px;
+  right: 0px;
+  color: var(--primary-color);
+}
+
+.intro h1 {
+  margin: 15px 0px;
+  font-family: var(--primary-font);
+  font-size: 3rem;
+}
+
+.intro span {
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.home-Get-Started-btn {
+  width: 180px;
+  color: white;
+  height: 60px;
+  border-radius: 5px;
+  background-color: var(--btn-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 50px;
+  top: calc(35vw - 200px);
+}
+#get-started {
+  font-size: 22px;
+  font-family: var(--primary-font);
+}
+
+.home-Get-Started-btn:hover {
+  background-color: var(--gradient-color);
+  color: var(--primary-color);
+  border: solid 2px var(--primary-color);
+  /* border: solid 2px var(--btn-color); */
+  cursor: pointer;
+}
+
+.home-page-image {
+  /* width: 400px; it is on the basics of Standerd resolution monitor, you are using higher resolution monitor don't Change it */
+  /* height: 400px; it is on the basics of Standerd resolution monitor, you are using higher resolution monitor don't Change it */
+  width: 600px; /* It's temporary, will change it later*/
+  height: 573px;
+}
+
+.services,
+.pricings,
+.about,
+.contact {
+  position: absolute;
+  z-index: 2;
+  right: -100vw;
+  width: 92vw;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition-duration: 1s;
+  display: block;
+}
+
+.servicesLeft,
+.pricingsLeft,
+.aboutLeft,
+.contactLeft {
+  position: absolute;
+  z-index: 2;
+  left: -8vw;
+  width: 8vw;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition-duration: 1s;
+  display: block;
+}
+
+.container1 {
+  background-color: var(--primary-color);
+  width: 8vw;
+  height: 100vh;
+  position: relative;
+}
+.company-name {
+  transform-origin: 0vw 0vw;
+  transform: rotate(-90deg) translate(-500px, +20px);
+  position: absolute;
+  font-size: 2.8rem;
+  /* text-shadow: 1px 1px 0px #008c86, 1px 1px 0px #04434a; */
+  width: 40vw;
+  border: 1px solid rgba(255, 0, 0, 0);
+  font-family: var(--primary-font);
+  background-image: url("../Images/Greengif.gif");
+  background-repeat: repeat;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container2 {
+  width: 92vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.945);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.container2-1 {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.close2,
+.close3,
+.close4,
+.close5 {
+  width: 40px;
+  height: 40px;
+  background-image: url("../Images/cross.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.close2:hover,
+.close3:hover,
+.close4:hover,
+.close5:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+.container2-2 {
+  width: 100%;
+  height: calc(100vh - 60px);
+  /* background-image: url("../Images/menuBG.png");
+  background-size: cover; */
+}
+
+/* start cards section */
+.cards {
+  width: 90vw;
+  height: 80vh;
+  font-family: var(--primary-font);
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+}
+.cards header{
+  position: absolute;
+  top: 2.5rem;
+  left:2rem;
+  font-size: 1.5rem;
+}
+.card {
+    box-shadow: 0px 0.333rem 13px 1px rgb(0 0 0 / 10%);
+    margin: 20px;
+    border-radius: 0.5rem;
+    padding: 25px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.card:nth-of-type(1) {
+    border-top: .333rem solid var(--cyan);
+}
+.card:nth-of-type(2) {
+    border-top: .333rem solid var(--red);
+}
+.card:nth-of-type(3) {
+    border-top: .333rem solid var(--orange);
+}
+.card:nth-of-type(4) {
+    border-top: .333rem solid var(--blue);
+}
+.card h3 {
+    color: var(--very_dark_blue);
+    font-weight: 600;
+}
+.card p {
+    color: var(--grayish_blue);
+    font-weight: 200;
+    line-height: 1.5rem;
+}
+
+.login-form-container {
+  position: relative;
+  z-index: 2;
+  right: -8vw;
+  bottom: -100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 92vw;
+  height: 100vh;
+  background: rgb(107 169 162);
+  font-family: var(--primary-font);
+}
+.login-form {
+  width: 35rem;
+  height: 40rem;
+  border-radius: 50px;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.248), -6px -6px 4px rgb(48, 48, 48);
+  display: flex;
+  justify-content: center;
+}
+.login-form form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  top: 8rem;
+}
+.form-title {
+  position: relative;
+  color: rgb(39, 39, 39);
+  bottom: 2rem;
+  display: flex;
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--primary-color);
+  user-select: none;
+  text-shadow: 6px 6px 4px rgba(10, 10, 10, 0.241);
+}
+.form-input {
+  position: relative;
+  margin: 20px;
+  width: 25rem;
+  height: 4rem;
+  padding: 0 20px;
+  background: rgb(39, 39, 39);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.179);
+}
+.form-input:-moz-placeholder {
+  color: rgb(79, 79, 79);
+}
+.form-input:placeholder {
+  color: rgb(79, 79, 79);
+}
+.form-input:focus {
+  box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.179), 4px 4px 4px rgb(48, 48, 48);
+}
+.login-form button {
+  width: 150px;
+  height: 60px;
+  border: 0;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 2.5rem;
+  border-radius: 30px;
+  color: var(--primary-color);
+  background: rgb(39, 39, 39);
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.248), -4px -4px 4px rgb(48, 48, 48);
+}
+.login-form button:active {
+  transform: scale(0.9);
+}
+.forgot-password {
+  font-size: 19px;
+  text-decoration: none;
+  color: white;
+}
+.forgot-password:hover {
+  color: var(--primary-color);
+}
