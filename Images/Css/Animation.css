@@ -1,14 +1,5 @@
-/* Logo-Animations */
-  .logo svg {
-    cursor: pointer;
-    position: relative;
-    height: 120px;
-    width: 120px;
-  }
-  
+/* Logo-Animations */  
   .svglogo {
-    width: 120px;
-    height: 120px;
     position: relative;
     cursor: pointer;
     top: 14px;
@@ -18,6 +9,11 @@
     border: 0px solid red;
     animation-timing-function: ease-in-out;
     animation-direction: alternate-reverse;
+  }
+
+  .svglogo img{
+    width: 95px;
+    height: 95px;
   }
   
   @keyframes logo {
