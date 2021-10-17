@@ -1,3 +1,20 @@
+document.querySelector(".crossClose").addEventListener("click", () =>{
+  
+  document.querySelector(".getStartedCoverLeftShodow").style.display = "none";
+  document.querySelector(".getStartedCoverTopShodow").style.display = "none";
+  document.querySelector(".getStartedCoverButtomShodow").style.display = "none";
+  document.querySelector(".getStartedCoverRightShodow").style.display = "none";
+})
+
+document.querySelector("#get-started-btn").addEventListener("click", () =>{
+  
+  document.querySelector(".getStartedCoverLeftShodow").style.display = "block";
+  document.querySelector(".getStartedCoverTopShodow").style.display = "block";
+  document.querySelector(".getStartedCoverButtomShodow").style.display = "block";
+  document.querySelector(".getStartedCoverRightShodow").style.display = "flex";
+})
+
+
 function showingMenu(item) {
   document.getElementById(item).addEventListener("click", () => {
     let companyNameBox = document.querySelector("." + item + "Left");
@@ -8,7 +25,7 @@ function showingMenu(item) {
     let detailsBox = document.querySelector("." + item);
     detailsBox.style.display = "flex";
     detailsBox.style.right = "0vw";
-    detailsBox.style.transitionDuration = "1s";
+    detailsBox.style.transitionDuration = "0.5s";
   });
 }
 
@@ -21,7 +38,7 @@ function closingMenu(close, item) {
     let detailsBox = document.querySelector("." + item);
     detailsBox.style.right = "-100vw";
     detailsBox.style.display = "block";
-    detailsBox.style.transitionDuration = "1s";
+    detailsBox.style.transitionDuration = "0.5s";
   });
 }
 

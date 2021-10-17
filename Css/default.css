@@ -164,19 +164,32 @@ body {
   cursor: pointer;
 }
 
-.home-page-image {
+.home-page-video {
+  position: fixed;
+  left: 5vw;
+  top: calc(50vh - 13.5vw);
+  z-index: 3;
   /* width: 400px; it is on the basics of Standerd resolution monitor, you are using higher resolution monitor don't Change it */
   /* height: 400px; it is on the basics of Standerd resolution monitor, you are using higher resolution monitor don't Change it */
-  width: 600px; /* It's temporary, will change it later*/
-  height: 573px;
+  width: 48vw; /* It's temporary, will change it later*/
+  height: 27vw;
+  background-image: url('../Images/image_right.png');
 }
+.introVideo{
+  width: 48vw; /* It's temporary, will change it later*/
+  height: 27vw;
+}
+.home-page-image{
+  width: 50vw;
+  height: 30vh;
 
+}
 .services,
 .pricings,
 .about,
 .contact {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   right: -100vw;
   width: 92vw;
   height: 100vh;
@@ -191,7 +204,7 @@ body {
 .aboutLeft,
 .contactLeft {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   left: -8vw;
   width: 8vw;
   height: 100vh;
@@ -405,4 +418,106 @@ body {
 }
 .forgot-password:hover {
   color: var(--primary-color);
+}
+
+.getStartedCoverLeftShodow{
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  width: 5vw;
+  height: 100vh;
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  background-color: rgba(17, 79, 116, 0.5);
+  border-radius: 0px;
+  display: none;
+}
+.getStartedCoverTopShodow{
+  position: absolute;
+  z-index: 100;
+  left: 5vw;
+  width: 48vw;
+  height: calc(50vh - 13.5vw);
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  background-color: rgba(17, 79, 116, 0.5);
+  border-radius: 0px;
+  display: none;
+}
+.getStartedCoverButtomShodow{
+  position: absolute;
+  z-index: 100;
+  left: 5vw;
+  top: calc(50vh + 13.5vw);
+  width: 48vw;
+  height: calc(50vh - 13.5vw);
+  backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+    background-color: rgba(17, 79, 116, 0.5);
+    border-radius: 0px;
+  display: none;
+}
+.getStartedCoverRightShodow{
+  position: absolute;
+  z-index: 100;
+  left: 53vw;
+  width: 47vw;
+  height: 100vh;
+  backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(6px) saturate(180%);
+    background-color: rgba(17, 79, 116, 0.5);
+    border-radius: 0px;
+    /*border: 1px solid rgba(255, 255, 255, 0.125);*/
+  display: none;
+}
+.crossClose{
+  width: 60px;
+  height: 60px;
+  background-image: url("../Images/cross.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.crossClose:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+
+.getStartedOption{
+    width: 47vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aboutSchoolInPhoneVideo{
+  position: relative;
+  left: -5vw;
+  width: 400px;
+  height: 200px;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+.aboutSchoolInPhoneLoginSignUp{
+  position: relative;
+  left: +5vw;
+  width: 400px;
+  height: 200px;
+  background: #34e89e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2ea44f, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+.aboutSchoolInPhoneVideo:hover, .aboutSchoolInPhoneLoginSignUp:hover{
+  cursor: pointer;
+  transform: scale(1.07);
+  transition-duration: 0.5s;
 }
