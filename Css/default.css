@@ -509,8 +509,8 @@ body {
 .aboutSchoolInPhoneVideo{
   position: relative;
   left: -5vw;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
   background: #0F2027;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -520,8 +520,8 @@ body {
 .aboutSchoolInPhoneLoginSignUp{
   position: relative;
   left: +5vw;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 150px;
   background: #34e89e;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2ea44f, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -530,7 +530,7 @@ body {
 }
 .aboutSchoolInPhoneVideo:hover, .aboutSchoolInPhoneLoginSignUp:hover{
   cursor: pointer;
-  transform: scale(1.07);
+  transform: scale(1.25);
   transition-duration: 0.5s;
   box-shadow: rgb(8, 156, 8) 0px 20px 30px -10px;
 }
@@ -545,7 +545,7 @@ body {
   top: 0px;
   width: 100vw;
   height: 100vh;
-  background-image: url("../Images/blackboardBg22.png");
+  background-image: url("../Images/new2.png");
   background-position: 0px 0px;
   background-position: left 40% bottom -10%; 
   background-size: cover;
@@ -555,13 +555,15 @@ body {
 }
 
 .loginInSignUpDivOne{
-  width: 50vw;
+  width: 300px;
   height: 100vh;
 }
 
 .backToHompageFromLoginSignUp{
-  width: 50vw;
-  height: 250px;
+  width: 300px;
+  height: 150px;
+  filter: drop-shadow(-1px 12px 6px rgba(255, 0, 0, 0.308));
+  border: 0px solid red;
 }
 .backToHompageFromLoginSignUpArrow{
   position: relative;
@@ -574,16 +576,40 @@ body {
   background: linear-gradient(to right, #2ea44f, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
+.bannerScreen{
+  width: calc(100vw - 700px);
+  height:  100vh;
+  border: 0px solid red;
+  position: relative;
+}
+.lottiePlayer{
+  position: absolute;
+  right: 0px;
+}
 .backToHompageFromLoginSignUpArrow:hover {
   cursor: pointer;
   transform: scale(1.07);
   transition-duration: 0.5s;
 }
-.loginInSignUpDivTwo{
-  width: 50vw;
+.loginSignUpDivTwo{
+  width: 400px;
   height: 100vh;
+  border: 0px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
+.loginSignUpContaienr{
+  width: 400px;
+  height: 550px;
+  background: rgba(236, 255, 249, 0.144);
+box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.199);
+backdrop-filter: blur( 6px );
+-webkit-backdrop-filter: blur( 6px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
 
 
